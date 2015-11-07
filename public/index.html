@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		<title> Misa Pi :) </title>
+		
+		<!-- Link CSS and other style sheets -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		
+		<div class = "container">
+			<div id = "top-bar" class = "page-header row">
+				<div class = "col-sm-9">
+					<h1>Misa Pi: Room Automation </h1>
+				</div>
+				<div class = "col-sm-3">
+					<div class = "row">
+						<h4 id = "date"></h4>
+					</div>
+					<div class = "row">
+						<h4 id = "time"></h4>
+					</div>
+				</div>
+			</div>
+		
+			<div id="room-control-mon" class="row">
+				<div id="light-control" class="col-sm-6">		
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Light Control</h3>
+						</div>			
+						<div class="panel-body">
+						
+							<div class="row">
+								<div class="button-group col-sm-4">
+									<h4>Light Status:</h4>
+								</div>
+								
+								<div class="button-group col-sm-4">
+									<h4 id = "light-status"></h4>
+								</div>
+								
+								<div class="button-group col-sm-4">
+									<a href="#" class="btn btn-lg btn-toggle btn-danger">Toggle</a>
+								</div>																
+							</div>
+						</div>
+					</div>
+				
+				
+				</div>
+				
+				<div id="environment" class="col-sm-6">		
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Environment</h3>
+						</div>			
+						<div class="panel-body">
+							<div class = "row">
+								<div class = "col-sm-6">
+									<h4>Temperature:</h4>
+								</div>
+								
+								<div class = "col-sm-6">
+									<h4>Dynamic</h4>
+								</div>
+							</div>
+							
+							<div class = "row">
+								<div class = "col-sm-6">
+									<h4>Humidity:</h4>
+								</div>
+								
+								<div class = "col-sm-6">
+									<h4>Dynamic</h4>
+								</div>
+							</div>
+							
+						</div>						
+					</div>				
+				</div>
+				
+			</div>
+		
+			<div id="service-mon" class="row">
+				<div id="torrent-monitor" class="col-sm-6">		
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Torrent Monitoring</h3>
+						</div>			
+						<div class="panel-body">
+							<div class="row">
+								<div class="button-group col-sm-6">
+									<h4>Go to Torrent Control:</h4>
+								</div>
+								
+								<div class="button-group col-sm-6">
+									<a href="http://10.0.0.24:9091" class="btn btn-lg btn-pirate btn-success">Pirate ;)</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div id="cluster-mon" class="col-sm-6">		
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Pi Cluster Monitoring</h3>
+						</div>			
+						<div class="panel-body">
+						Info about cluster here
+						Master Node - IP
+						ARP Table of all nodes
+						</div>
+					</div>
+				
+				</div>			
+			</div>		
+		</div>
+	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>		
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/node-app.js"></script>
+	
+	
+	</body>
+</html>

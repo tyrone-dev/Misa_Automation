@@ -1,0 +1,18 @@
+{
+  "name": "misa_auto",
+  "version": "0.1.0",
+  "description": "basic home automation, monitoring and control",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tyronevb",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.10.2",
+    "socket.io": "~1.3.7",
+    "onoff": "~1.0.3",
+    "async": "~1.5.0",
+    "moment": "~2.10.6"
+  }
+}
